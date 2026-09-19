@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Dine · Kitchen
+  </title>
+  <meta content="#11110f" name="theme-color"/>
+  <link href="/styles.css?v=dine-clean-20260909" rel="stylesheet"/>
+ </head>
+ <body class="kitchen-page">
+  <header class="topbar">
+   <a class="brand" href="/">
+    <span class="brand-mark">
+     D
+    </span>
+    <span>
+     Dine
+    </span>
+    <small>
+     Kitchen
+    </small>
+   </a>
+   <nav>
+    <a class="nav-pill" href="/">
+     Tables
+    </a>
+    <a class="nav-pill active" href="/kitchen.html">
+     Kitchen
+    </a>
+    <a class="nav-pill" href="/admin.html">
+     Manager
+    </a>
+   </nav>
+  </header>
+  <main class="shell">
+   <section class="dash-head">
+    <div>
+     <p class="eyebrow">
+      LIVE KITCHEN DISPLAY
+     </p>
+     <h1>
+      Service, in motion.
+     </h1>
+     <p>
+      New table orders appear automatically. Update a card and the customer sees the same status on their phone.
+     </p>
+    </div>
+    <div class="connection-chip">
+     <span class="status-dot live">
+     </span>
+     Real-time connected
+    </div>
+   </section>
+   <section class="metric-row">
+    <article>
+     <span>
+      Active orders
+     </span>
+     <strong id="activeCount">
+      0
+     </strong>
+    </article>
+    <article>
+     <span>
+      Kitchen load
+     </span>
+     <strong id="loadValue">
+      0%
+     </strong>
+    </article>
+    <article>
+     <span>
+      Preparing
+     </span>
+     <strong id="preparingCount">
+      0
+     </strong>
+    </article>
+    <article>
+     <span>
+      Ready
+     </span>
+     <strong id="readyCount">
+      0
+     </strong>
+    </article>
+   </section>
+   <section class="section-title">
+    <div>
+     <h2>
+      Order queue
+     </h2>
+     <p>
+      Oldest active orders are shown first.
+     </p>
+    </div>
+    <button class="btn btn-ghost" id="refreshKitchen">
+     Refresh
+    </button>
+   </section>
+   <section class="kitchen-grid" id="kitchenGrid">
+   </section>
+  </main>
+  <div class="toast" id="toast">
+  </div>
+  <script src="/kitchen.js?v=dine-clean-20260909">
+  </script>
+ </body>
+</html>
