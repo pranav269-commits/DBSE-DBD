@@ -1,0 +1,21 @@
+DINE-Premium/
+├─ frontend/                 React + Vite user interfaces
+│  ├─ public/qr-codes/       12 browser-served QR PNGs
+│  └─ src/
+│     ├─ components/
+│     ├─ pages/              QRHome, Menu, Cart, Tracking, Kitchen, Cashier, Admin, Presentation
+│     ├─ services/api.js
+│     └─ styles/global.css
+├─ backend/                  FastAPI + SQLAlchemy REST API
+│  └─ app/
+│     ├─ models/             relational ORM models
+│     ├─ schemas/            Pydantic request models
+│     ├─ routers/            REST routers
+│     └─ services/           transactions and priority logic
+├─ database/
+│  ├─ schema.sql             tables, constraints, indexes, views, procedure, trigger
+│  └─ seed.sql               12 tables + categories + realistic menu
+├─ qr-codes/                 12 generated QR PNGs
+├─ scripts/generate_qr.py    local or production URL QR generation
+├─ docs/                     testing, DB, presentation, syllabus and deployment guides
+└─ README.md                 exact Windows setup/run guide
