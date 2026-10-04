@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Dine · Table Access
+  </title>
+  <meta content="#11110f" name="theme-color"/>
+  <link href="/styles.css?v=dine-clean-20260909" rel="stylesheet"/>
+ </head>
+ <body class="board-page">
+  <header class="topbar">
+   <a class="brand" href="/">
+    <span class="brand-mark">
+     D
+    </span>
+    <span>
+     Dine
+    </span>
+   </a>
+   <nav>
+    <a class="nav-pill active" href="/">
+     Tables
+    </a>
+    <a class="nav-pill" href="/kitchen.html">
+     Kitchen
+    </a>
+    <a class="nav-pill" href="/admin.html">
+     Manager
+    </a>
+   </nav>
+  </header>
+  <main class="shell board-shell">
+   <section class="board-hero">
+    <div>
+     <p class="eyebrow">
+      SMART TABLE ACCESS
+     </p>
+     <h1>
+      Scan your table.
+      <br/>
+      <span>
+       Everything else flows.
+      </span>
+     </h1>
+     <p class="hero-copy">
+      Each QR is unique to one table. Scan from a phone on the same Wi-Fi or hotspot, order from the menu, and watch the kitchen respond live.
+     </p>
+    </div>
+    <div class="hero-status glass">
+     <div class="status-dot live">
+     </div>
+     <div>
+      <strong id="connectionLabel">
+       Connecting…
+      </strong>
+      <span id="networkLabel">
+       Checking phone-ready address
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="board-toolbar">
+    <div>
+     <h2>
+      12 dining tables
+     </h2>
+     <p id="summaryText">
+      Loading live availability…
+     </p>
+    </div>
+    <button class="btn btn-ghost" id="refreshBtn">
+     Refresh
+    </button>
+   </section>
+   <section aria-live="polite" class="tables-grid" id="tablesGrid">
+   </section>
+  </main>
+  <div class="toast" id="toast">
+  </div>
+  <script src="/board.js?v=dine-clean-20260909">
+  </script>
+ </body>
+</html>

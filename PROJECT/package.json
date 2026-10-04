@@ -1,0 +1,16 @@
+{
+  "name": "dine-smart-restaurant",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Dine — advanced smart restaurant ordering, kitchen tracking and database systems project",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "node --watch backend/src/server.js",
+    "db:setup": "node database/setup.js",
+    "db:review": "node database/review.js",
+    "test": "node --test --test-concurrency=1 backend/tests/*.test.js",
+    "check": "node --check backend/src/server.js && node --check backend/src/app.js && node --check backend/src/store.js && node --check backend/src/qr.js && node --check frontend/board.js && node --check frontend/menu.js && node --check frontend/kitchen.js && node --check frontend/admin.js && node --check database/setup.js && node --check database/review.js",
+    "verify": "npm run check && npm test"
+  }
+}

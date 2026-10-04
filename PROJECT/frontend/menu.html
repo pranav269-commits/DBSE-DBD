@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Dine · Menu
+  </title>
+  <meta content="#11110f" name="theme-color"/>
+  <link href="/styles.css?v=dine-clean-20260909" rel="stylesheet"/>
+ </head>
+ <body class="menu-page">
+  <header class="mobile-head">
+   <a class="brand" href="/">
+    <span class="brand-mark">
+     D
+    </span>
+    <span>
+     Dine
+    </span>
+   </a>
+   <div class="table-badge" id="tableBadge">
+    Verifying table…
+   </div>
+  </header>
+  <main class="menu-shell">
+   <section class="menu-hero">
+    <div>
+     <p class="eyebrow">
+      YOUR TABLE · YOUR ORDER
+     </p>
+     <h1>
+      Good food,
+      <br/>
+      <span>
+       beautifully simple.
+      </span>
+     </h1>
+     <p>
+      Order straight from your table. Your kitchen status will update here automatically.
+     </p>
+    </div>
+    <div class="rush-card hidden" id="rushCard">
+     <span class="rush-icon">
+      ⚡
+     </span>
+     <div>
+      <strong>
+       SmartRush is active
+      </strong>
+      <small>
+       Kitchen is busy. Quick-serve dishes are highlighted.
+      </small>
+     </div>
+    </div>
+   </section>
+   <section class="active-order-panel hidden" id="activeOrderPanel">
+   </section>
+   <section class="menu-controls">
+    <div class="search-wrap">
+     <span>
+      ⌕
+     </span>
+     <input id="searchInput" placeholder="Search dishes…"/>
+    </div>
+    <button class="filter-btn" id="vegToggle">
+     Veg only
+    </button>
+   </section>
+   <div class="category-strip" id="categories">
+   </div>
+   <section class="menu-grid" id="menuGrid">
+   </section>
+  </main>
+  <button class="cart-fab hidden" id="cartFab">
+   <span>
+    Cart
+   </span>
+   <strong id="cartCount">
+    0
+   </strong>
+   <em id="cartTotal">
+    ₹0
+   </em>
+  </button>
+  <div class="drawer-backdrop hidden" id="cartDrawer">
+   <section class="drawer">
+    <div class="drawer-head">
+     <div>
+      <p class="eyebrow">
+       TABLE ORDER
+      </p>
+      <h2>
+       Your cart
+      </h2>
+     </div>
+     <button class="icon-btn" id="closeCart">
+      ×
+     </button>
+    </div>
+    <div class="cart-lines" id="cartLines">
+    </div>
+    <div class="cart-summary">
+     <div>
+      <span>
+       Subtotal
+      </span>
+      <strong id="subtotalText">
+       ₹0
+      </strong>
+     </div>
+     <div>
+      <span>
+       GST · 5%
+      </span>
+      <strong id="gstText">
+       ₹0
+      </strong>
+     </div>
+     <div class="grand">
+      <span>
+       Total
+      </span>
+      <strong id="totalText">
+       ₹0
+      </strong>
+     </div>
+    </div>
+    <label class="field">
+     <span>
+      Name (optional)
+     </span>
+     <input id="guestName" maxlength="50" placeholder="Guest"/>
+    </label>
+    <button class="btn btn-primary full" id="sendOrderBtn">
+     Send order to kitchen
+    </button>
+    <p class="microcopy">
+     Prices are locked when the order is placed. Your final bill uses these exact order prices.
+    </p>
+   </section>
+  </div>
+  <div class="drawer-backdrop hidden" id="orderModal">
+   <section class="drawer order-drawer">
+    <div class="drawer-head">
+     <div>
+      <p class="eyebrow">
+       LIVE ORDER
+      </p>
+      <h2 id="orderTitle">
+       Order
+      </h2>
+     </div>
+     <button class="icon-btn" id="closeOrder">
+      ×
+     </button>
+    </div>
+    <div id="orderTrack">
+    </div>
+    <div class="bill-box" id="billBox">
+    </div>
+    <div class="payment-box" id="paymentBox">
+    </div>
+   </section>
+  </div>
+  <div class="toast" id="toast">
+  </div>
+  <script src="/menu.js?v=dine-clean-20260909">
+  </script>
+ </body>
+</html>

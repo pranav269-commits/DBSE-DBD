@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Dine · Manager
+  </title>
+  <meta content="#11110f" name="theme-color"/>
+  <link href="/styles.css?v=dine-clean-20260909" rel="stylesheet"/>
+ </head>
+ <body class="admin-page">
+  <header class="topbar">
+   <a class="brand" href="/">
+    <span class="brand-mark">
+     D
+    </span>
+    <span>
+     Dine
+    </span>
+    <small>
+     Manager
+    </small>
+   </a>
+   <nav>
+    <a class="nav-pill" href="/">
+     Tables
+    </a>
+    <a class="nav-pill" href="/kitchen.html">
+     Kitchen
+    </a>
+    <a class="nav-pill active" href="/admin.html">
+     Manager
+    </a>
+   </nav>
+  </header>
+  <main class="shell">
+   <section class="dash-head">
+    <div>
+     <p class="eyebrow">
+      RESTAURANT CONTROL
+     </p>
+     <h1>
+      One clear view.
+     </h1>
+     <p>
+      Orders, tables, revenue and inventory in one live operational view.
+     </p>
+    </div>
+    <button class="btn btn-danger" id="resetSystem">
+     Reset system
+    </button>
+   </section>
+   <section class="metric-row six" id="adminMetrics">
+   </section>
+   <section class="admin-columns">
+    <div>
+     <div class="section-title">
+      <div>
+       <h2>
+        Recent orders
+       </h2>
+       <p>
+        Live table and payment status.
+       </p>
+      </div>
+     </div>
+     <div class="panel-list" id="recentOrders">
+     </div>
+    </div>
+    <div>
+     <div class="section-title">
+      <div>
+       <h2>
+        Top dishes
+       </h2>
+       <p>
+        By quantity ordered.
+       </p>
+      </div>
+     </div>
+     <div class="panel-list" id="topItems">
+     </div>
+    </div>
+   </section>
+   <section class="section-title inventory-title">
+    <div>
+     <h2>
+      Inventory
+     </h2>
+     <p>
+      Low-stock items are surfaced automatically.
+     </p>
+    </div>
+   </section>
+   <div class="inventory-table" id="inventoryTable">
+   </div>
+  </main>
+  <div class="toast" id="toast">
+  </div>
+  <script src="/admin.js?v=dine-clean-20260909">
+  </script>
+ </body>
+</html>
